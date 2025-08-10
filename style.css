@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mozilla Headline', cursive;
+    background-color: #ffdd6e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #dcff6d;
+}
+
+header {
+    background-color: #fffda0;
+    min-width: 100%;
+    justify-items: center;
+    border-radius: 60px;
+    font-size: larger;
+    color: chocolate;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.task-management {
+    display: flex;
+    flex-direction: column;
+    background-color: #a0ff9f;
+    padding-left: 25px;
+    font-size: 3rem;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.add-task {
+    max-width: 10%;
+    min-height: 3rem;
+    margin-left: 3rem;
+    font-size: 50%;
+}
+
+#input-task,
+#select-priority {
+    min-height: 2rem;
+    max-width: 100%;
+    margin: 0.5rem;
+    font-size: large;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #a0ff9f;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 3rem;
+    background-color: beige;
+    animation-duration: 3s;
+    animation-name: slide;
+}
+
+.task p {
+    margin: 0;
+    align-self: center;
+}
+
+.controller {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-self: center;
+    position: absolute;
+    right: 5%;
+    animation-duration: 3s;
+    animation-name: slide;
+}
+
+.caption-input {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.caption-input:disabled {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.input-found:disabled {
+    background-color: yellow;
+}
+
+@media (max-width: 661px) {
+    .date {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .add-task {
+        max-width: 30%;
+    }
+
+    .caption-input {
+        max-width: 25%;
+        font-size: small;
+    }
+}
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo Pro</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>📝 My Tasks</h2>
+        </header>
+        <main>
+            <div class="task-management">
+                <label>Task: <input type="text" id="input-task" placeholder="Enter a task..."></label>
+                <label>Priority:
+                    <select id="select-priority">
+                        <option value="low" selected>Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </label>
+                <button class="add-task">ADD TASK</button>
+            </div>
+            <div class="search-menu">
+                <label>Search: <input type="text" id="search-bar" placeholder="Enter a task..."></label>
+                <select id="filter">
+                    <option value="all" selected>All</option>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+            <div class="tasks">
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
