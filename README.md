@@ -28,7 +28,7 @@ Designed for quick task tracking and improved productivity.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/todo-pro.git
+   git clone https://github.com/yari4ek89/todo-pro.git
 
 2. Open the folder in your code editor.
 
